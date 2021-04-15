@@ -234,14 +234,3 @@ def clothing_operations():
         clothing_operations()
 
 budget_operations()
-
-
-### commit change
-### commit change dont wanna show
-### we gone too far
-### Irrelevant to the above, just random comment below###
-
-# budget = Category('Foodie')
-# print(budget.name)
-
-# print(type(ent))
