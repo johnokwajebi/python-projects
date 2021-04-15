@@ -44,7 +44,7 @@ class Category:
   
 
 def budget_operations():
-    print ("Welcome to your budget app. What would you like to do??")
+    print ("Welcome to your Budget app. What would you like to do??")
     budget_ops = int(input('Please input:\n1. Food 2. Entertainment \n3. Clothing 4. Start again 5. Exit app\n '))
     if budget_ops == 1:
         print('\n**************FOOD**************\n')
@@ -100,7 +100,7 @@ def food_operations():
         elif input_category == 2:
             if input_transfer > food.get_balance():
                 print("Insufficient funds for transfer ")
-            elif input_transfer >= food.get_balance():
+            elif input_transfer <= food.get_balance():
                 food.transfer(input_transfer,clothing)
                 print(f"Transfer of {input_transfer} was made from Food to Clothing")
             else:
@@ -217,7 +217,7 @@ def clothing_operations():
         elif input_category == 2:
             if input_transfer > clothing.get_balance():
                 return "Insufficient funds for transfer "
-            elif input_transfer >= clothing.get_balance():
+            elif input_transfer <= clothing.get_balance():
                 clothing.transfer(input_transfer,ent)
                 print(f"Transfer of {input_transfer} was made from Clothing to Entertainment")
             else:
