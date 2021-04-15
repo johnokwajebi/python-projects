@@ -106,6 +106,9 @@ def food_operations():
             else:
                 print("Invalid input, please select from the available options")
                 food_operations()
+            
+        else:
+            print("Invalid input, please select from the available options")
             food_operations()
     elif food_ops == 4:
         print(" Your food balance is:",food.get_balance())
@@ -162,6 +165,8 @@ def ent_operations():
             else:
                 print("Invalid input, please select from the available options")
                 ent_operations()
+        else:
+            print("Invalid input, please select from the available options")
             ent_operations()
     elif ent_ops == 4:
         print(" Your Entertainment balance is:",food.get_balance())
@@ -218,7 +223,9 @@ def clothing_operations():
             else:
                 print("Invalid input, please select from the available options")
                 clothing_operations()
-        clothing_operations()
+        else:
+            print("Invalid input, please select from the available options")
+            clothing_operations()
         
     elif clothing_ops == 4:
         print(" Your clothing balance is:",clothing.get_balance())
